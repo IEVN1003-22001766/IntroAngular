@@ -8,5 +8,16 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.html',
 })
 export class App {
-  protected readonly title = signal('introAngular');
+  nombre:string='Juan Esteban Gonzalez Lopez'
+  
+  duplicarnumero(a:number):number{
+    return a*2
+  }
+
+  pelicula={
+    titulo: 'Spider-Man',
+    fecha_lanzamiento: new Date(),
+    precio: 250
+  }
+
 }
