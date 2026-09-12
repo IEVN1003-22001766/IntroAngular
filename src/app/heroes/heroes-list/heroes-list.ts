@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { IHeroe } from '../heroe';
 
 @Component({
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule],
   selector: 'app-heroes-list',
   styleUrl: './heroes-list.less',
   templateUrl: './heroes-list.html',
@@ -14,7 +16,7 @@ export class HeroesList {
   muestraImagen:boolean = true;
   listFilter:string = '';
 
-  heroes:any[] = [
+  heroes:IHeroe[] = [
     {
       imagen: 'https://dragonball-api.com/characters/goku_normal.webp',
       nombre: 'Goku',

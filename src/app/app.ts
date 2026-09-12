@@ -1,10 +1,12 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HeroesList } from '../app/heroes/heroes-list/heroes-list'; 
-import { FormsModule } from '@angular/forms';
+import { HeroesList } from '../app/heroes/heroes-list/heroes-list';
+import { OperaBas } from '../app/formulario/opera-bas/opera-bas';
+import { Distancia2puntos } from '../app/formulario/distancia2puntos/distancia2puntos';
+
 
 @Component({
-  imports: [RouterOutlet, HeroesList, FormsModule],
+  imports: [RouterOutlet, HeroesList, OperaBas, Distancia2puntos],
   selector: 'app-root',
   styleUrl: './app.less',
   templateUrl: './app.html',

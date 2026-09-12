@@ -1,0 +1,34 @@
+<div class="col-md-4">
+    <div class="mb-3">
+        <form action="">
+            <h2>Ingresa el primer punto</h2>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="x1" class="form-label">Coordenada X1:</label>
+                    <input type="text" class="form-control" name="x1" placeholder="X1" [(ngModel)]='x1'>
+                </div>
+                <div class="col-md-6">
+                    <label for="y1" class="form-label">Coordenada Y1:</label>
+                    <input type="text" class="form-control" name="y1" placeholder="Y1" [(ngModel)]='y1'>
+                </div>
+            </div>
+
+            <h2>Ingresa el segundo punto</h2>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="x2" class="form-label">Coordenada X2:</label>
+                    <input type="text" class="form-control" name='x1' placeholder='X2' [(ngModel)]='x2'>
+                </div>
+                <div class="col-md-6">
+                    <label for="y2" class="form-label">Coordenada Y2:</label>
+                    <input type="text" class="form-control" name="y2" placeholder="Y2" [(ngModel)]='y2'>
+                </div>
+            </div>
+
+            <button class="btn btn-primary mt-3" (click)="calcular()"  >Enviar Informacion</button>
+        </form>
+    </div>
+</div>
+<div class="col-6">
+    <h2>Resultado: {{distancia}}</h2>
+</div>
