@@ -1,1 +1,47 @@
-<p>heroes-list works!</p>
+<div class="card">
+    <div class="card-header">
+        <h1>Heroes Dragon Ball</h1>
+
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-2">Filtrar por:</div>
+                <div class="col-md-4">
+                    <input class="format-control" type="text" name="" id="" placeholder="Ingrese nombre del heroe">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Filtro:</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped" *ngIf="heroes.length>0">
+            <thead>
+                <button (click)="muestraImagen = !muestraImagen" class="btn btn-primary">
+                    {{ muestraImagen ? 'Ocultar' : 'Mostrar' }}
+                </button>
+
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Raza</th>
+                <th>Ki</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let heroe of heroes">
+                    <td>
+                        <img *ngIf="muestraImagen" [src]="heroe.imagen" [style.width.px]="imagenWidth"
+                            [style.margin.px]="imagenMargin">
+                    </td>
+                    <td>{{heroe.nombre}}</td>
+                    <td>{{heroe.descripcion}}</td>
+                    <td>{{heroe.race}}</td>
+                    <td>{{heroe.ki}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

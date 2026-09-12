@@ -1,8 +1,10 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { HeroesList } from '../app/heroes/heroes-list/heroes-list'; 
+import { FormsModule } from '@angular/forms';
 
 @Component({
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, HeroesList, FormsModule],
   selector: 'app-root',
   styleUrl: './app.less',
   templateUrl: './app.html',
