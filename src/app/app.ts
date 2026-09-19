@@ -1,13 +1,16 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { HeroesList } from '../app/heroes/heroes-list/heroes-list';
-import { OperaBas } from '../app/formulario/opera-bas/opera-bas';
-import { Distancia2puntos } from '../app/formulario/distancia2puntos/distancia2puntos';
-import { Figuras } from '../app/formulario/figuras/figuras';
+// import { RouterOutlet } from '@angular/router';
+// import { HeroesList } from '../app/heroes/heroes-list/heroes-list';
+// import { OperaBas } from '../app/formulario/opera-bas/opera-bas';
+// import { Distancia2puntos } from '../app/formulario/distancia2puntos/distancia2puntos';
+// import { Figuras } from '../app/formulario/figuras/figuras';
+import { Palindromo } from '../app/formulario/palindromo/palindromo';
+import { Triangulo } from '../app/formulario/triangulo/triangulo';
+import { Sesion } from '../app/formulario/sesion/sesion';
 
 
 @Component({
-  imports: [RouterOutlet, HeroesList, OperaBas, Distancia2puntos, Figuras],
+  imports: [Palindromo, Triangulo, Sesion],
   selector: 'app-root',
   styleUrl: './app.less',
   templateUrl: './app.html',

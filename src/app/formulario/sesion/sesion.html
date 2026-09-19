@@ -1,0 +1,13 @@
+<div class="col-md-4">
+    <div class="mb-3">
+        <div class="form-group-4">
+            <h2>Iniciar Sesión</h2>
+            <label for="texto">Usuario:</label>
+            <input [(ngModel)]='inputUsuario' type="text" class="form-control" name="texto" placeholder="usuario">
+            <label for="texto">Contraseña:</label>
+            <input [(ngModel)]='inputPassword' type="password" class="form-control" name="texto" placeholder="********">
+        </div>
+        <button class="btn btn-primary mt-3" (click)="iniciarSesion()">Iniciar sesión</button>
+        <h4>{{mensaje}}</h4>
+    </div>
+</div>

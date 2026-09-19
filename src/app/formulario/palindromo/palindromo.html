@@ -1,0 +1,25 @@
+<div class="col-md-4">
+    <div class="mb-3">
+        <form action="">
+            <div class="form-group pt-4">
+
+            </div>
+
+            <div class="form-group pt-4">
+                <h2>Palindromo</h2>
+                <label for="texto">Ingresa una frase:</label>
+                <input [(ngModel)]='texto' type="text" class="form-control" name="texto"
+                    placeholder="Ingresa tu frase">
+            </div>
+
+            <button class="btn btn-primary mt-3" (click)="calcular()">Calcular</button>
+
+        </form>
+    </div>
+</div>
+<div class="col-6">
+    <h4>Texto: {{resultado}}</h4>
+    <h4>Número de Vocales: {{nVocales}}</h4>
+    <h4>Número de Consonantes: {{nConsonantes}}</h4>
+    <h4>Es Palindromo?: {{esPalindromo}}</h4>
+</div>

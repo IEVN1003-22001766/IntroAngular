@@ -1,0 +1,43 @@
+<div class="col-md-4">
+    <div class="mb-3">
+        <div class="form-group-4">
+            <h2>Puntos del Triangulo</h2>
+            <div class="d-flex">
+                <div class="mx-3">
+                    <h4>Punto A</h4>
+                    <label for="texto">X:</label>
+                    <input [(ngModel)]='x1' type="text" class="form-control" name="texto" placeholder="coordenada x">
+                    <label for="texto">Y:</label>
+                    <input [(ngModel)]='y1' type="text" class="form-control" name="texto" placeholder="coordenada x">
+                </div>
+                <div class="mx-3">
+                    <h4>Punto B</h4>
+                    <label for="texto">X:</label>
+                    <input [(ngModel)]='x2' type="text" class="form-control" name="texto" placeholder="coordenada x">
+                    <label for="texto">Y:</label>
+                    <input [(ngModel)]='y2' type="text" class="form-control" name="texto" placeholder="coordenada x">
+                </div>
+                <div class="mx-3">
+                    <h4>Punto C</h4>
+                    <label for="texto">X:</label>
+                    <input [(ngModel)]='x3' type="text" class="form-control" name="texto" placeholder="coordenada x">
+                    <label for="texto">Y:</label>
+                    <input [(ngModel)]='y3' type="text" class="form-control" name="texto" placeholder="coordenada x">
+                </div>
+            </div>
+            <button class="btn btn-primary mt-3" (click)="calcular()">Calcular</button>
+        </div>
+        <div class="my-2">
+            <div *ngIf="resultado>0">
+                <p><b>Punto A: ({{x1}},{{y1}})</b></p>
+                <p><b>Punto B: ({{x2}},{{y2}})</b></p>
+                <p><b>Punto C: ({{x3}},{{y3}})</b></p>
+                <h4>Los puntos forman un triangulo :D</h4>
+                <h4>El area es de: {{resultado}} unidades cuadradas</h4>
+            </div>
+            <div *ngIf="resultado<=0">
+                <h4>Los puntos NO forman un triangulo :C</h4>
+            </div>
+        </div>
+    </div>
+</div>
